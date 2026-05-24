@@ -43,9 +43,6 @@ const DefaultNeutralPortfolio = ({ data }) => {
           
           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl space-y-4">
-              <span className="inline-flex items-center rounded-md bg-emerald-950/80 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-800/30">
-                Professional Portfolio
-              </span>
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-100 sm:text-5xl">
                 {data.profile?.name || "Your Name"}
               </h1>
