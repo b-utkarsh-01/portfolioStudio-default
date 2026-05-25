@@ -8,7 +8,7 @@ const AuroraWork = ({ stage, experiences, projects }) => {
     <section className="aurora-section pb-16">
       <div className="aurora-section-heading">
         <div className="aurora-label">{stage.title}</div>
-        <div style={{ flex: 1, height: "1px", background: "rgba(255,255,255,0.06)" }} />
+        <div style={{ flex: 1, height: "1px", background: "linear-gradient(90deg, rgba(197, 168, 128, 0.2), transparent)" }} />
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "48px" }}>
@@ -17,7 +17,7 @@ const AuroraWork = ({ stage, experiences, projects }) => {
           <div>
             <h3
               className="aurora-serif"
-              style={{ fontSize: "1rem", fontWeight: 600, color: "#e7e5e4", marginBottom: "24px", letterSpacing: "0.01em" }}
+              style={{ fontSize: "1.1rem", fontWeight: 400, color: "#e6dfd3", marginBottom: "24px", letterSpacing: "0.01em" }}
             >
               Experience
             </h3>
@@ -31,14 +31,14 @@ const AuroraWork = ({ stage, experiences, projects }) => {
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", paddingTop: "4px" }}>
                     <div className="aurora-dot" />
                     {idx < experiences.length - 1 && (
-                      <div style={{ flex: 1, width: "1px", background: "rgba(245,158,11,0.15)", minHeight: "40px" }} />
+                      <div style={{ flex: 1, width: "1px", background: "rgba(197,168,128,0.15)", minHeight: "40px" }} />
                     )}
                   </div>
                   <div style={{ flex: 1, paddingBottom: "4px" }}>
                     <div style={{ fontSize: "13px", fontWeight: 600, color: "#e7e5e4", marginBottom: "2px" }}>
                       {item.title}
                     </div>
-                    <div style={{ fontSize: "11px", color: "#f59e0b", marginBottom: "4px", fontWeight: 500 }}>
+                    <div style={{ fontSize: "11px", color: "#c5a880", marginBottom: "4px", fontWeight: 500 }}>
                       {item.company}
                     </div>
                     <div className="aurora-mono" style={{ fontSize: "10px", color: "#78716c", marginBottom: "8px" }}>
@@ -61,7 +61,7 @@ const AuroraWork = ({ stage, experiences, projects }) => {
           <div>
             <h3
               className="aurora-serif"
-              style={{ fontSize: "1rem", fontWeight: 600, color: "#e7e5e4", marginBottom: "24px", letterSpacing: "0.01em" }}
+              style={{ fontSize: "1.1rem", fontWeight: 400, color: "#e6dfd3", marginBottom: "24px", letterSpacing: "0.01em" }}
             >
               Projects
             </h3>
@@ -73,7 +73,7 @@ const AuroraWork = ({ stage, experiences, projects }) => {
                     {item.title || item.name}
                   </div>
                   {(item.role || item.tech) && (
-                    <div style={{ fontSize: "10px", color: "#f59e0b", marginBottom: "8px", fontWeight: 500 }}>
+                    <div style={{ fontSize: "10px", color: "#c5a880", marginBottom: "8px", fontWeight: 500 }}>
                       {item.role || item.tech}
                     </div>
                   )}

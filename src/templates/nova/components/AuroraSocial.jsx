@@ -8,7 +8,7 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
     <section className="aurora-section pb-16">
       <div className="aurora-section-heading">
         <div className="aurora-label">{stage.title}</div>
-        <div style={{ flex: 1, height: "1px", background: "rgba(255,255,255,0.06)" }} />
+        <div style={{ flex: 1, height: "1px", background: "linear-gradient(90deg, rgba(197, 168, 128, 0.2), transparent)" }} />
       </div>
 
       {/* Services */}
@@ -16,7 +16,7 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
         <div style={{ marginBottom: "40px" }}>
           <h3
             className="aurora-serif"
-            style={{ fontSize: "1rem", fontWeight: 600, color: "#e7e5e4", marginBottom: "20px" }}
+            style={{ fontSize: "1.1rem", fontWeight: 400, color: "#e6dfd3", marginBottom: "20px" }}
           >
             Services
           </h3>
@@ -26,8 +26,8 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
                 <div
                   style={{
                     width: "32px",
-                    height: "2px",
-                    background: "linear-gradient(90deg, #f59e0b, transparent)",
+                    height: "1px",
+                    background: "linear-gradient(90deg, #c5a880, transparent)",
                     marginBottom: "14px",
                   }}
                 />
@@ -48,7 +48,7 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
         <div>
           <h3
             className="aurora-serif"
-            style={{ fontSize: "1rem", fontWeight: 600, color: "#e7e5e4", marginBottom: "20px" }}
+            style={{ fontSize: "1.1rem", fontWeight: 400, color: "#e6dfd3", marginBottom: "20px" }}
           >
             Kind Words
           </h3>
@@ -63,14 +63,14 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
                 <div
                   className="aurora-serif"
                   style={{
-                    fontSize: "5rem",
-                    color: "rgba(245,158,11,0.15)",
-                    lineHeight: 0.6,
-                    marginBottom: "16px",
-                    fontWeight: 900,
+                    fontSize: "4rem",
+                    color: "rgba(197,168,128,0.12)",
+                    lineHeight: 0.5,
+                    marginBottom: "10px",
+                    fontWeight: 300,
                   }}
                 >
-                  "
+                  “
                 </div>
                 <p
                   className="aurora-serif"
@@ -85,7 +85,7 @@ const AuroraSocial = ({ stage, services, testimonials }) => {
                   {item.quote}
                 </p>
                 <footer>
-                  <div style={{ fontSize: "12px", fontWeight: 600, color: "#f59e0b" }}>{item.name}</div>
+                  <div style={{ fontSize: "12px", fontWeight: 600, color: "#c5a880" }}>{item.name}</div>
                   {item.role && (
                     <div className="aurora-mono" style={{ fontSize: "10px", color: "#78716c", marginTop: "2px" }}>
                       {item.role}

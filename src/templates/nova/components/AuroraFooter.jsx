@@ -6,7 +6,7 @@ const AuroraFooter = ({ profileName }) => {
       style={{
         paddingTop: "48px",
         paddingBottom: "40px",
-        borderTop: "1px solid rgba(255,255,255,0.05)",
+        borderTop: "1px solid rgba(197, 168, 128, 0.15)",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -14,10 +14,10 @@ const AuroraFooter = ({ profileName }) => {
         gap: "16px",
       }}
     >
-      <span className="aurora-serif" style={{ fontSize: "1.1rem", color: "#57534e", fontStyle: "italic" }}>
+      <span className="aurora-serif" style={{ fontSize: "1.2rem", color: "#78716c", fontStyle: "italic" }}>
         {profileName || "Portfolio"}
       </span>
-      <span className="aurora-mono" style={{ fontSize: "10px", color: "#44403c", letterSpacing: "0.1em" }}>
+      <span className="aurora-mono" style={{ fontSize: "10px", color: "#57534e", letterSpacing: "0.1em" }}>
         © {year} · Built with Portfolio Studio
       </span>
     </footer>

@@ -87,7 +87,7 @@ const Slate = ({ data }) => {
           highlights={highlights}
         />
 
-        <main className="w-full lg:flex-1 lg:h-full lg:overflow-y-auto space-y-16 lg:pr-6 pb-12 lg:pb-0 no-scrollbar scroll-smooth">
+        <main className="w-full lg:flex-1 lg:h-full lg:overflow-y-auto space-y-16 lg:pr-6 pb-12 lg:pb-0 slate-scrollbar scroll-smooth">
           {workStage.enabled && <ExperienceSection title={workStage.title} experiences={experiences} />}
           <ProjectsSection projects={projects} />
           {socialStage.enabled && <SocialSection title={socialStage.title} services={services} testimonials={testimonials} />}

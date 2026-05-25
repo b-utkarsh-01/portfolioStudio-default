@@ -3,13 +3,13 @@ import AuroraPortfolio from "./AuroraPortfolio";
 export const defaultNovaTemplate = {
   id: "default-nova",
   tier: "default",
-  name: "Aurora",
-  description: "Warm dark editorial layout with flowing amber aurora gradients, Playfair Display serif typography, and smooth scroll-reveal animations.",
+  name: "Chronicle",
+  description: "Matte dark editorial layout with Cormorant Garamond serif typography, bronze accents, and minimal lookbook divisions.",
   theme: {
-    bgClassName: "bg-[#0a0908]",
+    bgClassName: "bg-[#080809]",
     cardClassName: "border-white/5 bg-white/[0.025] text-stone-200 hover:bg-white/[0.05] backdrop-blur-sm",
-    title: "Aurora Preview",
-    effects: "aurora",
+    title: "Chronicle Preview",
+    effects: "chronicle",
   },
   render: AuroraPortfolio,
 };

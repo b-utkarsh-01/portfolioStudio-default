@@ -5,7 +5,7 @@ const AuroraPublish = ({ stage, certifications }) => {
     <section className="aurora-section pb-16">
       <div className="aurora-section-heading">
         <div className="aurora-label">{stage.title}</div>
-        <div style={{ flex: 1, height: "1px", background: "rgba(255,255,255,0.06)" }} />
+        <div style={{ flex: 1, height: "1px", background: "linear-gradient(90deg, rgba(197, 168, 128, 0.2), transparent)" }} />
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "12px" }}>
@@ -32,18 +32,18 @@ const AuroraPublish = ({ stage, certifications }) => {
                 style={{
                   flexShrink: 0,
                   marginLeft: "12px",
-                  width: "32px",
-                  height: "32px",
-                  borderRadius: "8px",
-                  border: "1px solid rgba(245,158,11,0.25)",
-                  background: "rgba(245,158,11,0.06)",
+                  width: "28px",
+                  height: "28px",
+                  borderRadius: "4px",
+                  border: "1px solid rgba(197,168,128,0.25)",
+                  background: "rgba(197,168,128,0.04)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#f59e0b",
-                  fontSize: "14px",
+                  color: "#c5a880",
+                  fontSize: "12px",
                   textDecoration: "none",
-                  transition: "background 0.2s",
+                  transition: "all 0.2s",
                 }}
               >
                 ↗
@@ -53,10 +53,10 @@ const AuroraPublish = ({ stage, certifications }) => {
                 style={{
                   flexShrink: 0,
                   marginLeft: "12px",
-                  width: "8px",
-                  height: "8px",
+                  width: "6px",
+                  height: "6px",
                   borderRadius: "50%",
-                  background: "rgba(245,158,11,0.4)",
+                  background: "rgba(197,168,128,0.4)",
                 }}
               />
             )}

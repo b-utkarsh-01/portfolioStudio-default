@@ -7,7 +7,7 @@ const AuroraCustom = ({ customStages }) => {
         <section key={stage.id} className="aurora-section pb-16">
           <div className="aurora-section-heading">
             <div className="aurora-label">{stage.title || "More"}</div>
-            <div style={{ flex: 1, height: "1px", background: "rgba(255,255,255,0.06)" }} />
+            <div style={{ flex: 1, height: "1px", background: "linear-gradient(90deg, rgba(197, 168, 128, 0.2), transparent)" }} />
           </div>
 
           {stage.kind === "cards" ? (

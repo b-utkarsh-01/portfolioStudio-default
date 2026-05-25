@@ -37,6 +37,26 @@ const CyberStyles = () => (
       background: rgba(15,23,42,0.7);
       box-shadow: 0 0 40px rgba(6,182,212,0.05), 0 20px 60px rgba(0,0,0,0.3);
     }
+
+    .cyberglass-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(34, 211, 238, 1) rgba(6, 10, 18, 0.96);
+    }
+    .cyberglass-scrollbar::-webkit-scrollbar { width: 10px; height: 10px; }
+    .cyberglass-scrollbar::-webkit-scrollbar-track {
+      background: rgba(6, 10, 18, 0.96);
+      border-radius: 999px;
+      border: 1px solid rgba(34, 211, 238, 0.35);
+    }
+    .cyberglass-scrollbar::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, rgba(34, 211, 238, 1), rgba(217, 70, 239, 0.98));
+      border-radius: 999px;
+      border: 2px solid rgba(6, 10, 18, 0.96);
+      box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+    }
+    .cyberglass-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, rgba(125, 211, 252, 1), rgba(244, 114, 182, 1));
+    }
   `}</style>
 );
 

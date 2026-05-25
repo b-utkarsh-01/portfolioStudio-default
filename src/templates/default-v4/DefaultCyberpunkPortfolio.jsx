@@ -67,7 +67,7 @@ const DefaultCyberpunkPortfolio = ({ data }) => {
   const testimonials = (data.testimonials || []).slice(0, 4);
 
   return (
-    <div className="relative w-full min-h-screen bg-[#06070c] text-slate-100 antialiased font-sans p-4 sm:p-6 lg:p-12 overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-300">
+    <div className="relative w-full h-screen bg-[#06070c] text-slate-100 antialiased font-sans p-4 sm:p-6 lg:p-12 overflow-y-auto overflow-x-hidden cyberglass-scrollbar selection:bg-cyan-500/30 selection:text-cyan-300">
       <CyberStyles />
 
       <div className="absolute inset-0 cyber-grid-bg pointer-events-none z-0" />

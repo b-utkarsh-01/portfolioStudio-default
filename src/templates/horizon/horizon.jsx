@@ -97,8 +97,29 @@ const Horizon = ({ data }) => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-300 overflow-hidden"
+      className="relative w-full h-screen bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-300 overflow-y-auto overflow-x-hidden horizon-scrollbar"
     >
+      <style>{`
+        .horizon-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(52, 211, 153, 0.98) rgba(2, 6, 23, 0.95);
+        }
+        .horizon-scrollbar::-webkit-scrollbar { width: 10px; height: 10px; }
+        .horizon-scrollbar::-webkit-scrollbar-track {
+          background: rgba(2, 6, 23, 0.95);
+          border-radius: 999px;
+          border: 1px solid rgba(52, 211, 153, 0.35);
+        }
+        .horizon-scrollbar::-webkit-scrollbar-thumb {
+          background: linear-gradient(180deg, rgba(74, 222, 128, 1), rgba(45, 212, 191, 1));
+          border-radius: 999px;
+          border: 2px solid rgba(2, 6, 23, 0.95);
+          box-shadow: 0 0 10px rgba(16, 185, 129, 0.45);
+        }
+        .horizon-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(180deg, rgba(134, 239, 172, 1), rgba(94, 234, 212, 1));
+        }
+      `}</style>
       {/* Interactive Mouse Glow */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-40 transition-opacity duration-300"

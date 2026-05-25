@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useRef } from "react";
 import AuroraBackground from "./components/AuroraBackground";
 import AuroraCustom from "./components/AuroraCustom";
 import AuroraFooter from "./components/AuroraFooter";
@@ -12,6 +12,7 @@ import { getContactIcon, getStage, getTopSkills } from "./utils/auroraUtils";
 
 const AuroraPortfolio = ({ data }) => {
   if (!data) return null;
+  const scrollContainerRef = useRef(null);
 
   const stages = data.layout?.stages || [];
   const profile = data.profile || {};
@@ -74,19 +75,22 @@ const AuroraPortfolio = ({ data }) => {
 
   return (
     <div
+      ref={scrollContainerRef}
       className="aurora-root"
       style={{
         position: "relative",
         width: "100%",
-        minHeight: "100vh",
-        background: "#0a0908",
+        height: "100vh",
+        background: "#080809",
         color: "#e7e5e4",
+        overflowY: "auto",
         overflowX: "hidden",
+        overscrollBehavior: "contain",
         WebkitFontSmoothing: "antialiased",
       }}
     >
       <AuroraStyles />
-      <AuroraBackground />
+      <AuroraBackground scrollContainerRef={scrollContainerRef} />
 
       <div
         style={{
@@ -108,12 +112,12 @@ const AuroraPortfolio = ({ data }) => {
           }}
         >
           <span className="aurora-mono aurora-gradient-text" style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.12em" }}>
-            {(data.badgeName?.name || "PS")} | {(data.badgeName?.badgeTitle || "AURORA")}
+            {(data.badgeName?.name || "PS")} | {(data.badgeName?.badgeTitle || "CHRONICLE")}
           </span>
           <div style={{ display: "flex", gap: "6px" }}>
-            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(245,158,11,0.5)" }} />
-            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(251,146,60,0.35)" }} />
-            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(168,85,247,0.3)" }} />
+            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(195,163,122,0.6)" }} />
+            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(203,191,180,0.4)" }} />
+            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(255,255,255,0.2)" }} />
           </div>
         </div>
 
