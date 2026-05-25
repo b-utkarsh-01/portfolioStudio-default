@@ -7,9 +7,9 @@ Each default template must live in its own folder under:
 ## Current pattern
 
 - `src/portfolio/PortfolioRenderer.jsx` (shared default renderer/orchestrator)
-- `src/templates/default-v1/template.js`
-- `src/templates/default-v2/template.js`
-- `src/templates/default-v3/template.js`
+- `src/templates/horizon/default-horizon.template.js`
+- `src/templates/slate/default-slate.template.js`
+- `src/templates/nova/default-nova.template.js`
 - `src/templates/default-v4/template.js`
 - `src/templates/default-v4/DefaultNeutralPortfolio.jsx`
 

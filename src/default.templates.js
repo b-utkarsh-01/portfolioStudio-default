@@ -1,11 +1,11 @@
-import { defaultV1Template } from "./templates/default-v1/template";
-import { defaultV2Template } from "./templates/default-v2/template";
-import { defaultV3Template } from "./templates/default-v3/template";
+import { defaultHorizonTemplate } from "./templates/horizon/default-horizon.template";
+import { defaultSlateTemplate } from "./templates/slate/default-slate.template";
+import { defaultNovaTemplate } from "./templates/nova/default-nova.template";
 import { defaultV4Template } from "./templates/default-v4/template";
 
 export const defaultTemplates = [
-  defaultV1Template,
-  defaultV2Template,
-  defaultV3Template,
+  defaultHorizonTemplate,
+  defaultSlateTemplate,
+  defaultNovaTemplate,
   defaultV4Template,
 ];

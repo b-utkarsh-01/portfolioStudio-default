@@ -1,16 +1,15 @@
-import DefaultNeutralPortfolio from "./DefaultNeutralPortfolio";
+import DefaultCyberpunkPortfolio from "./DefaultCyberpunkPortfolio";
 
 export const defaultV4Template = {
   id: "default-v4",
   tier: "default",
-  name: "Executive Canvas",
-  description: "Polished professional layout with strong hierarchy and recruiter-friendly sections.",
+  name: "Cyberpunk Glassmorphism",
+  description: "Futuristic text-only layout featuring frosted glass cards, glowing neon accents, and modular bento grids.",
   theme: {
-    bgClassName: "bg-slate-100",
-    textClassName: "text-slate-900",
-    cardClassName: "border-slate-300 bg-white text-slate-700 hover:bg-slate-50",
-    title: "Executive Canvas Preview",
+    bgClassName: "bg-[#07080e]",
+    cardClassName: "border-white/10 bg-slate-900/40 text-slate-200 hover:bg-slate-900/60 backdrop-blur-md",
+    title: "Cyberpunk Glassmorphism Preview",
     effects: "minimal",
   },
-  render: DefaultNeutralPortfolio,
+  render: DefaultCyberpunkPortfolio,
 };
