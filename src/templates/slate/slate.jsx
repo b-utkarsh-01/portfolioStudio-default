@@ -20,11 +20,20 @@ const Slate = ({ data }) => {
   const publishStage = getStage(stages, "publish", "Credentials");
 
   const customStages = useMemo(
-    () =>
-      (Array.isArray(data.customStages) ? data.customStages : []).filter((item) =>
-        item?.kind === "cards" ? Array.isArray(item.cards) && item.cards.length : `${item?.paragraph || ""}`.trim()
-      ),
-    [data.customStages]
+    () => {
+      const layoutTitleById = new Map(
+        (Array.isArray(stages) ? stages : []).map((stage) => [`${stage?.id || ""}`, `${stage?.title || ""}`.trim()])
+      );
+      return (Array.isArray(data.customStages) ? data.customStages : [])
+        .filter((item) =>
+          item?.kind === "cards" ? Array.isArray(item.cards) && item.cards.length : `${item?.paragraph || ""}`.trim()
+        )
+        .map((item) => ({
+          ...item,
+          title: `${layoutTitleById.get(`${item?.id || ""}`) || item?.title || ""}`.trim(),
+        }));
+    },
+    [data.customStages, stages]
   );
   const highlights = Array.isArray(data.profile?.highlights) ? data.profile.highlights.filter(Boolean) : [];
   const educationCards = useMemo(

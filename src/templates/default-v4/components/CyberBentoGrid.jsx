@@ -234,7 +234,7 @@ const CyberBentoGrid = ({
         <div className="flex items-center gap-2 border-b border-white/5 pb-3 mb-6">
           <Terminal className="w-4 h-4 text-cyan-400" />
           <span className="font-cyber-mono text-[10px] text-cyan-400 font-bold uppercase tracking-wider">
-            {stage.title?.toUpperCase() || "LOG // CUSTOM_"}
+            {stage.title?.toUpperCase() || "CUSTOM_STAGE"}
           </span>
         </div>
         {stage.kind === "cards" ? (
