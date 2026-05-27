@@ -8,7 +8,28 @@ const DefaultPortfolioRenderer = ({ templateId = "default-horizon", data }) => {
 
   if (typeof template?.render === "function") {
     const RenderComponent = template.render;
-    return <RenderComponent data={data} />;
+    return (
+      <div className="template-safe-text">
+        <style>{`
+          .template-safe-text p,
+          .template-safe-text h1,
+          .template-safe-text h2,
+          .template-safe-text h3,
+          .template-safe-text h4,
+          .template-safe-text h5,
+          .template-safe-text h6,
+          .template-safe-text span,
+          .template-safe-text li,
+          .template-safe-text a,
+          .template-safe-text blockquote {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            max-width: 100%;
+          }
+        `}</style>
+        <RenderComponent data={data} />
+      </div>
+    );
   }
 
   return null;

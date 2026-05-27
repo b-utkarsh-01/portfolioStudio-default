@@ -14,13 +14,13 @@ const LeftSidebar = ({ profile, workEnabled, experiencesCount, projectsCount, so
         </nav>
       </div>
 
-      <div className="my-8">
+      <div className="my-8 min-h-0 overflow-y-auto pr-1">
         {(badgeName || badgeTitle) ? (
           <p className="mb-4 font-mono-brutalist text-[10px] text-slate-500 uppercase tracking-widest">
             [{badgeName || "PORTFOLIO"}{badgeTitle ? ` | ${badgeTitle}` : ""}]
           </p>
         ) : null}
-        <h1 className="text-4xl sm:text-5xl lg:text-[40px] xl:text-[48px] font-normal font-serif-brutalist tracking-wide text-white uppercase leading-[1.1] select-none">
+        <h1 className="text-3xl sm:text-4xl lg:text-[34px] xl:text-[40px] font-normal font-serif-brutalist tracking-wide text-white uppercase leading-[1.1] break-words [overflow-wrap:anywhere] select-none">
           {profile?.summary || "PRODUCT-FOCUSED DEVELOPER WITH EXPERIENCE BUILDING SCALABLE WEB APPS, CLEAN APIS, AND MODERN UI SYSTEMS."}
         </h1>
       </div>
